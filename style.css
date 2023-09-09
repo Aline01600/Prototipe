@@ -103,7 +103,7 @@ CSS STRUCTURE:
 }
 /* Theme Colors */
 :root {
-    --accent-color       : #FFC43F;
+    --accent-color       : #00343b;
     --dark-color         : #222222;
     --light-dark-color   : #727272;
     --light-color        : #fff;
@@ -118,7 +118,6 @@ CSS STRUCTURE:
     --body-font           : "Open Sans", sans-serif;
     --heading-font        : "Nunito", sans-serif;
 }
-
 body {
   --bs-link-color: #333;
   --bs-link-hover-color:#333;
@@ -136,18 +135,19 @@ body {
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 2;
-  --bs-body-color: #747474;
+  --bs-body-color: #00272d; /* muda a cor de todas as categorias da barra de pesquisa, 
+  letras da descrição do produto e letras do final, barra de emal */
 
-  --bs-primary: #FFC43F;
-  --bs-primary-rgb: 255, 196, 63;
+  /*--bs-primary: #606de2; 
+  --bs-primary-rgb: 255, 196, 63; não alteram nada
 
-  --bs-success: #a3be4c;
-  --bs-success-rgb: 163, 190, 76;
+  --bs-success: #8992e4;
+  --bs-success-rgb: 163, 190, 76; 
   
-  --bs-primary-bg-subtle: #FFF9EB;
-  --bs-success-bg-subtle: #eef5e5;
+  --bs-primary-bg-subtle: #d4064b;
+  --bs-success-bg-subtle: #1d33db;*/
   
-  --bs-border-color: #F7F7F7;
+  --bs-border-color: #00272d;   /*muda a cor das linhas de
 
   --bs-secondary-rgb: 230, 243, 251;
   /* --bs-success-rgb: 238, 245, 228; */
@@ -203,9 +203,9 @@ body {
   --bs-btn-disabled-border-color: #EFEFEF;
   --bs-gradient: none;
 }
-.btn-warning {
-  --bs-btn-color: #747474;
-  --bs-btn-bg: #FCF7EB;
+.btn-warning { /*palavras chave*/
+  --bs-btn-color: #00272d; /*cor das palavras*/
+  --bs-btn-bg: #1b95fa;   /*cor das caixinhas*/
   --bs-btn-border-color: #FCF7EB;
   --bs-btn-hover-color: #747474;
   --bs-btn-hover-bg: #FFECBE;
@@ -296,7 +296,7 @@ h1,h2,h3,h4,h5,h6 {
   top: 0;
   left: 0;
   z-index: 111;
-  background: #fff;
+  background: #00272d;
 }
 
 .preloader-wrapper .preloader {
@@ -345,6 +345,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* *** Start editing below this line *** */
+.hearder-color{
+  background: #00272d; 
+}
+
 .container-fluid {
   max-width: 1600px;
   
@@ -595,7 +599,7 @@ h1,h2,h3,h4,h5,h6 {
   transition: all 0.3s ease-out;
 }
 .product-item .btn-wishlist:hover {
-  background: rgb(240, 56, 56);
+  background: rgb(56, 84, 240);  /*muda a cor dos corações*/
   color: #fff;
 }
 .product-item .qty {
